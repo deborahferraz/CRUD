@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Árvores</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Árvores</h1>
+
+    <label for="inputId">Id:</label>
+    <input type="number" name="inputId" id="inputId">
+    <input type="button" value="Procure" id="btProcure" onclick="procure()" style="display:inline;">
+    <input type="button" value="Inserir" id="btInserir" onclick="inserir()" style="display:none;">
+    <input type="button" value="Alterar" id="btAlterar" onclick="alterar()" style="display:none;">
+    <input type="button" value="Excluir" id="btExcluir" onclick="excluir()" style="display:none;">
+    <br><br>
+    <label for="inputNomePopular">Nome Popular:</label>
+    <input type="text" name="inputNomePopular" id="inputNomePopular">
+    <br><br>
+    
+    <label for="inputNomeCientifico">Nome Cietifíco:</label>
+    <input type="text" name="inputNomeCientifico" id="inputNomeCientifico" min="0" max="10" step="0.1">
+    
+    <label for="inputAltura">Altura:</label>
+    <input type="number" name="inputAltura" id="inputAltura" min="0" max="10" step="0.1">
+    
+    <label for="inputRegiao">Região:</label>
+    <input type="text" name="inputRegiao" id="inputRegiao" min="0" max="10" step="0.1">
+   
+    <br><br>
+    <div id="divAviso" style="background-color: antiquewhite;"></div>
+    <br>
+    <input type="button" value="Salvar" id="btSalvar" onclick="salvar()" style="display:none;">
+    <input type="button" value="Cancelar" id="btCancelar" onclick="cancelarOperacao()" style="display:none;">
+    <br><br>
+    <!-- <input type="button" value="Listar" onclick="listar()">
+    <br><br> -->
+
+    <div id="outputSaida" style="background-color: rgb(0, 255, 64);">...</div>
+    
+    <script src="./Arvore.js"></script>
+    <script src="./ArvoreControle.js"></script>
+</body>
+
+</html>
