@@ -134,7 +134,7 @@ function preparaListagem(vetor) {
             linha.nome + " - " +
             linha.dataLancamento + " - " +
             linha.peso + " - " +
-            linha.cor + " - " + "<br>";
+            linha.cor + "<br>";
     }
     return texto;
 }
